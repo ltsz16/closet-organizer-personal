@@ -884,51 +884,56 @@
       "steps": [
         {
           "step": 1,
+          "title": "Ensure Scene Safety",
+          "detail": "Before approaching the person, assess the environment for hazards. Look for traffic, electrical hazards, fire, broken glass, or other dangers. Move the person only if necessary to escape immediate danger. Your safety comes first—you cannot help if you're injured."
+        },
+        {
+          "step": 2,
           "title": "Check Responsiveness",
           "detail": "Tap the person's shoulder and shout, 'Are you okay?' Check if they are conscious and breathing. If unresponsive or not breathing normally, proceed with CPR."
         },
         {
-          "step": 2,
+          "step": 3,
           "title": "Call 911",
           "detail": "Call emergency services immediately or ask someone nearby to call. If alone with a mobile device, put the phone on speaker so you can talk while performing CPR."
         },
         {
-          "step": 3,
+          "step": 4,
           "title": "Position the Person",
           "detail": "Place the person flat on their back on a firm, hard surface (floor, ground). Tilt the head back slightly to open the airway. If possible, expose the chest."
         },
         {
-          "step": 4,
+          "step": 5,
           "title": "Hand Position",
           "detail": "Place the heel of one hand on the center of the chest between the nipples. Place your other hand on top, interlacing fingers. Keep your arms straight and position your shoulders directly above your hands."
         },
         {
-          "step": 5,
+          "step": 6,
           "title": "Chest Compressions",
           "detail": "Push hard and fast on the chest at a rate of 100-120 compressions per minute (push to the beat of 'Stayin' Alive'). Compress at least 2 inches deep. Allow complete recoil between compressions."
         },
         {
-          "step": 6,
+          "step": 7,
           "title": "Open the Airway",
           "detail": "Tilt the head back and lift the chin to open the airway. Remove any visible obstructions from the mouth (dentures, food, debris)."
         },
         {
-          "step": 7,
+          "step": 8,
           "title": "Give Rescue Breaths (If Trained)",
           "detail": "Pinch the nose shut, seal your mouth over theirs, and give 2 rescue breaths. Each breath should last about 1 second and make the chest rise. If untrained, hands-only CPR (compressions only) is also effective."
         },
         {
-          "step": 8,
+          "step": 9,
           "title": "Continue CPR",
           "detail": "Continue cycles of 30 chest compressions followed by 2 rescue breaths (or 100-120 compressions per minute if hands-only). Do NOT stop until: emergency responders arrive, the person starts breathing, you are too exhausted to continue, or an AED is available."
         },
         {
-          "step": 9,
+          "step": 10,
           "title": "Use an AED If Available",
           "detail": "If an Automated External Defibrillator (AED) is available, turn it on and follow the voice prompts. Apply the pads to bare, dry chest. Let the AED analyze the rhythm and deliver a shock if advised. Resume CPR immediately after shock."
         },
         {
-          "step": 10,
+          "step": 11,
           "title": "Recovery Position (If Breathing)",
           "detail": "Once the person begins breathing and is unresponsive, place them in the recovery position: turn on their side, tilt the head back slightly, and ensure the airway stays open. Stay with them until emergency responders arrive."
         }
