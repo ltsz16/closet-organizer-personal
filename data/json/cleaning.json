@@ -2,69 +2,46 @@
   "description": "Cleaning schedules and checklists",
   "rooms": [
     {
-      "id": "kitchen",
-      "label": "Kitchen",
-      "categories": [
-        {
-          "category": "Counters & Sink",
-          "items": [
-            {
-              "key": "kitchen_wipe_counters",
-              "description": "Wipe counters and clear clutter",
-              "frequency": "DAILY",
-              "sortOrder": 1
-            },
-            {
-              "key": "kitchen_clean_sink",
-              "description": "Clean and sanitize sink",
-              "frequency": "DAILY",
-              "sortOrder": 2
-            },
-            {
-              "key": "kitchen_deep_clean_counters",
-              "description": "Deep clean backsplash",
-              "frequency": "WEEKLY",
-              "sortOrder": 3
-            }
-          ]
-        },
-        {
-          "category": "Appliances",
-          "items": [
-            {
-              "key": "kitchen_clean_microwave",
-              "description": "Clean microwave interior",
-              "frequency": "WEEKLY",
-              "sortOrder": 4
-            },
-            {
-              "key": "kitchen_wipe_appliances",
-              "description": "Wipe stove exterior",
-              "frequency": "WEEKLY",
-              "sortOrder": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "bathroom",
       "label": "Bathroom",
       "categories": [
         {
-          "category": "Toilet & Sink",
+          "category": "Floors & Walls",
           "items": [
             {
-              "key": "bathroom_clean_toilet",
-              "description": "Clean and scrub toilet",
+              "key": "bathroom_sweep_floor",
+              "description": "Sweep/vacuum bathroom floor",
               "frequency": "DAILY",
-              "sortOrder": 1
+              "sortOrder": 11
             },
             {
-              "key": "bathroom_clean_sink",
-              "description": "Clean and sanitize sink",
+              "key": "bathroom_mop_floor",
+              "description": "Mop bathroom floor",
               "frequency": "WEEKLY",
-              "sortOrder": 2
+              "sortOrder": 12
+            },
+            {
+              "key": "bathroom_wash_bath_mats",
+              "description": "Wash bath mats",
+              "frequency": "WEEKLY",
+              "sortOrder": 13
+            }
+          ]
+        },
+        {
+          "category": "Seasonal Deep Clean",
+          "items": [
+            {
+              "key": "bathroom_clean_behind_toilet",
+              "description": "Clean behind and around toilet base",
+              "frequency": "MONTHLY",
+              "sortOrder": 15
+            },
+            {
+              "key": "bathroom_declutter_medicine",
+              "description": "Declutter medicine cabinet, check expiry",
+              "frequency": "SEASONAL",
+              "sortOrder": 16
             }
           ]
         },
@@ -72,10 +49,85 @@
           "category": "Shower & Tub",
           "items": [
             {
-              "key": "bathroom_clean_shower",
-              "description": "Scrub shower/tub",
+              "key": "bathroom_clean_shower_walls",
+              "description": "Scrub shower walls and door",
               "frequency": "WEEKLY",
+              "sortOrder": 7
+            },
+            {
+              "key": "bathroom_clean_tub",
+              "description": "Scrub bathtub",
+              "frequency": "WEEKLY",
+              "sortOrder": 8
+            },
+            {
+              "key": "bathroom_scrub_grout",
+              "description": "Scrub tile grout",
+              "frequency": "MONTHLY",
+              "sortOrder": 9
+            },
+            {
+              "key": "bathroom_clean_shower_curtain",
+              "description": "Wash or replace shower curtain/liner",
+              "frequency": "MONTHLY",
+              "sortOrder": 10
+            }
+          ]
+        },
+        {
+          "category": "Sink & Vanity",
+          "items": [
+            {
+              "key": "bathroom_clean_sink",
+              "description": "Clean and disinfect sink and faucet",
+              "frequency": "DAILY",
+              "sortOrder": 4
+            },
+            {
+              "key": "bathroom_wipe_mirror",
+              "description": "Wipe and polish mirror",
+              "frequency": "WEEKLY",
+              "sortOrder": 5
+            },
+            {
+              "key": "bathroom_organise_vanity",
+              "description": "Organize and wipe vanity surface",
+              "frequency": "WEEKLY",
+              "sortOrder": 6
+            }
+          ]
+        },
+        {
+          "category": "Toilet",
+          "items": [
+            {
+              "key": "bathroom_clean_toilet_bowl",
+              "description": "Clean toilet bowl with brush",
+              "frequency": "WEEKLY",
+              "sortOrder": 1
+            },
+            {
+              "key": "bathroom_wipe_toilet_exterior",
+              "description": "Wipe toilet exterior, lid, and handle",
+              "frequency": "WEEKLY",
+              "sortOrder": 2
+            },
+            {
+              "key": "bathroom_disinfect_toilet",
+              "description": "Disinfect toilet seat and base",
+              "frequency": "DAILY",
               "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "category": "Ventilation",
+          "items": [
+            {
+              "key": "bathroom_clean_exhaust_fan",
+              "description": "Clean exhaust fan cover",
+              "frequency": "SEASONAL",
+              "sortOrder": 14
             }
           ]
         }
@@ -86,13 +138,1264 @@
       "label": "Bedroom",
       "categories": [
         {
-          "category": "Floors",
+          "category": "Bedding",
+          "items": [
+            {
+              "key": "bedroom_make_bed",
+              "description": "Make bed",
+              "frequency": "DAILY",
+              "sortOrder": 1
+            },
+            {
+              "key": "bedroom_wash_sheets",
+              "description": "Wash bed sheets and pillowcases",
+              "frequency": "WEEKLY",
+              "sortOrder": 2
+            },
+            {
+              "key": "bedroom_wash_duvet",
+              "description": "Wash duvet cover",
+              "frequency": "WEEKLY",
+              "sortOrder": 3
+            },
+            {
+              "key": "bedroom_wash_pillows",
+              "description": "Wash pillows",
+              "frequency": "MONTHLY",
+              "sortOrder": 4
+            },
+            {
+              "key": "bedroom_flip_mattress",
+              "description": "Rotate/flip mattress",
+              "frequency": "SEASONAL",
+              "sortOrder": 5
+            }
+          ]
+        },
+        {
+          "category": "Closet",
+          "items": [
+            {
+              "key": "bedroom_organise_closet",
+              "description": "Organize closet, return items to correct bins",
+              "frequency": "MONTHLY",
+              "sortOrder": 11
+            }
+          ]
+        },
+        {
+          "category": "Floor",
           "items": [
             {
               "key": "bedroom_vacuum_floor",
               "description": "Vacuum or sweep floor",
               "frequency": "WEEKLY",
+              "sortOrder": 9
+            },
+            {
+              "key": "bedroom_mop_floor",
+              "description": "Mop hard floor",
+              "frequency": "MONTHLY",
+              "sortOrder": 10
+            }
+          ]
+        },
+        {
+          "category": "Seasonal Deep Clean",
+          "items": [
+            {
+              "key": "bedroom_wash_curtains",
+              "description": "Wash window curtains",
+              "frequency": "SEASONAL",
+              "sortOrder": 12
+            },
+            {
+              "key": "bedroom_clean_under_bed",
+              "description": "Vacuum under bed",
+              "frequency": "MONTHLY",
+              "sortOrder": 13
+            },
+            {
+              "key": "bedroom_dust_ceiling_fan",
+              "description": "Dust ceiling fan blades",
+              "frequency": "MONTHLY",
+              "sortOrder": 14
+            }
+          ]
+        },
+        {
+          "category": "Surfaces",
+          "items": [
+            {
+              "key": "bedroom_dust_surfaces",
+              "description": "Dust all furniture surfaces",
+              "frequency": "WEEKLY",
+              "sortOrder": 6
+            },
+            {
+              "key": "bedroom_wipe_nightstands",
+              "description": "Wipe down nightstands",
+              "frequency": "WEEKLY",
+              "sortOrder": 7
+            },
+            {
+              "key": "bedroom_clean_mirrors",
+              "description": "Clean mirrors",
+              "frequency": "WEEKLY",
+              "sortOrder": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dining_room",
+      "label": "Dining Room",
+      "categories": [
+        {
+          "category": "Floor",
+          "items": [
+            {
+              "key": "dining_sweep_floor",
+              "description": "Sweep/vacuum floor",
+              "frequency": "DAILY",
+              "sortOrder": 6
+            },
+            {
+              "key": "dining_mop_floor",
+              "description": "Mop floor",
+              "frequency": "WEEKLY",
+              "sortOrder": 7
+            }
+          ]
+        },
+        {
+          "category": "Seasonal Deep Clean",
+          "items": [
+            {
+              "key": "dining_wash_curtains",
+              "description": "Wash curtains",
+              "frequency": "SEASONAL",
+              "sortOrder": 8
+            },
+            {
+              "key": "dining_polish_furniture",
+              "description": "Polish wood furniture",
+              "frequency": "SEASONAL",
+              "sortOrder": 9
+            }
+          ]
+        },
+        {
+          "category": "Surfaces",
+          "items": [
+            {
+              "key": "dining_dust_sideboard",
+              "description": "Dust sideboard or buffet",
+              "frequency": "WEEKLY",
+              "sortOrder": 4
+            },
+            {
+              "key": "dining_clean_light_fixture",
+              "description": "Clean dining light fixture",
+              "frequency": "MONTHLY",
+              "sortOrder": 5
+            }
+          ]
+        },
+        {
+          "category": "Table & Chairs",
+          "items": [
+            {
+              "key": "dining_wipe_table",
+              "description": "Wipe dining table",
+              "frequency": "DAILY",
               "sortOrder": 1
+            },
+            {
+              "key": "dining_clean_chairs",
+              "description": "Wipe chair seats and backs",
+              "frequency": "WEEKLY",
+              "sortOrder": 2
+            },
+            {
+              "key": "dining_clean_chair_legs",
+              "description": "Clean chair legs and feet",
+              "frequency": "MONTHLY",
+              "sortOrder": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family_room",
+      "label": "Family Room",
+      "categories": [
+        {
+          "category": "Floor",
+          "items": [
+            {
+              "key": "family_vacuum_floor",
+              "description": "Vacuum or sweep floor",
+              "frequency": "WEEKLY",
+              "sortOrder": 7
+            },
+            {
+              "key": "family_mop_floor",
+              "description": "Mop hard floors",
+              "frequency": "MONTHLY",
+              "sortOrder": 8
+            },
+            {
+              "key": "family_clean_rug",
+              "description": "Vacuum/steam clean area rug",
+              "frequency": "MONTHLY",
+              "sortOrder": 9
+            }
+          ]
+        },
+        {
+          "category": "Seasonal Deep Clean",
+          "items": [
+            {
+              "key": "family_wash_curtains",
+              "description": "Wash curtains and window treatments",
+              "frequency": "SEASONAL",
+              "sortOrder": 10
+            },
+            {
+              "key": "family_clean_fireplace",
+              "description": "Clean fireplace/mantel (if applicable)",
+              "frequency": "SEASONAL",
+              "sortOrder": 11
+            },
+            {
+              "key": "family_dust_ceiling_fan",
+              "description": "Dust ceiling fan and light fixtures",
+              "frequency": "MONTHLY",
+              "sortOrder": 12
+            }
+          ]
+        },
+        {
+          "category": "Surfaces",
+          "items": [
+            {
+              "key": "family_dust_surfaces",
+              "description": "Dust all surfaces, shelves, and decor",
+              "frequency": "WEEKLY",
+              "sortOrder": 1
+            },
+            {
+              "key": "family_wipe_remotes",
+              "description": "Clean TV remotes and game controllers",
+              "frequency": "WEEKLY",
+              "sortOrder": 2
+            },
+            {
+              "key": "family_clean_tv_screen",
+              "description": "Clean TV/monitor screen",
+              "frequency": "WEEKLY",
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "category": "Upholstery",
+          "items": [
+            {
+              "key": "family_vacuum_sofa",
+              "description": "Vacuum sofa and cushions",
+              "frequency": "WEEKLY",
+              "sortOrder": 4
+            },
+            {
+              "key": "family_wash_throw_blankets",
+              "description": "Wash throw blankets and pillow covers",
+              "frequency": "MONTHLY",
+              "sortOrder": 5
+            },
+            {
+              "key": "family_deep_clean_sofa",
+              "description": "Deep clean sofa fabric/leather",
+              "frequency": "SEASONAL",
+              "sortOrder": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filters",
+      "label": "Filters",
+      "categories": [
+        {
+          "category": "6 months",
+          "items": [
+            {
+              "key": "filters_fridge_filter",
+              "description": "Fridge filter",
+              "frequency": "SIX_MONTHS",
+              "sortOrder": 4
+            },
+            {
+              "key": "filters_water_sink_filter",
+              "description": "Water sink filter",
+              "frequency": "SIX_MONTHS",
+              "sortOrder": 5
+            },
+            {
+              "key": "filters_sediment_filter",
+              "description": "Sediment filter",
+              "frequency": "SIX_MONTHS",
+              "sortOrder": 6
+            },
+            {
+              "key": "filters_water_softener",
+              "description": "Water softener",
+              "frequency": "SIX_MONTHS",
+              "sortOrder": 7
+            }
+          ]
+        },
+        {
+          "category": "Annual",
+          "items": [
+            {
+              "key": "filters_flush_hot_water_heater",
+              "description": "Flush hot water heater",
+              "frequency": "ANNUAL",
+              "sortOrder": 8
+            },
+            {
+              "key": "filters_replace_air_filters",
+              "description": "Replace air filters",
+              "frequency": "ANNUAL",
+              "sortOrder": 9
+            }
+          ]
+        },
+        {
+          "category": "Monthly",
+          "items": [
+            {
+              "key": "filters_room_filters_vacuumed",
+              "description": "Room filters vacuumed",
+              "frequency": "MONTHLY",
+              "sortOrder": 1
+            }
+          ]
+        },
+        {
+          "category": "Quarterly",
+          "items": [
+            {
+              "key": "filters_furnace_filter",
+              "description": "Furnace filter",
+              "frequency": "QUARTERLY",
+              "sortOrder": 2
+            },
+            {
+              "key": "filters_robot_vacuum_filters",
+              "description": "Robot vacuum filters",
+              "frequency": "QUARTERLY",
+              "sortOrder": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "garage",
+      "label": "Garage",
+      "categories": [
+        {
+          "category": "Floor",
+          "items": [
+            {
+              "key": "garage_sweep_floor",
+              "description": "Sweep garage floor",
+              "frequency": "WEEKLY",
+              "sortOrder": 1
+            },
+            {
+              "key": "garage_clean_oil_stains",
+              "description": "Treat and clean oil/grease stains",
+              "frequency": "MONTHLY",
+              "sortOrder": 2
+            },
+            {
+              "key": "garage_pressure_wash_floor",
+              "description": "Pressure wash garage floor",
+              "frequency": "SEASONAL",
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "category": "Organisation",
+          "items": [
+            {
+              "key": "garage_organise_tools",
+              "description": "Organize tools and equipment",
+              "frequency": "MONTHLY",
+              "sortOrder": 4
+            },
+            {
+              "key": "garage_dispose_hazardous",
+              "description": "Safely dispose of hazardous materials (old paint, etc.)",
+              "frequency": "SEASONAL",
+              "sortOrder": 5
+            },
+            {
+              "key": "garage_clear_clutter",
+              "description": "Clear clutter and donation items",
+              "frequency": "SEASONAL",
+              "sortOrder": 6
+            }
+          ]
+        },
+        {
+          "category": "Safety",
+          "items": [
+            {
+              "key": "garage_check_fire_ext",
+              "description": "Check fire extinguisher charge",
+              "frequency": "SEASONAL",
+              "sortOrder": 7
+            },
+            {
+              "key": "garage_inspect_smoke_detector",
+              "description": "Test smoke/CO detector",
+              "frequency": "MONTHLY",
+              "sortOrder": 8
+            }
+          ]
+        },
+        {
+          "category": "Seasonal Deep Clean",
+          "items": [
+            {
+              "key": "garage_wipe_shelves",
+              "description": "Wipe storage shelves",
+              "frequency": "SEASONAL",
+              "sortOrder": 9
+            },
+            {
+              "key": "garage_clean_fridge",
+              "description": "Clean garage refrigerator (if applicable)",
+              "frequency": "SEASONAL",
+              "sortOrder": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym",
+      "label": "Gym",
+      "categories": [
+        {
+          "category": "Air & Smell",
+          "items": [
+            {
+              "key": "gym_air_out_room",
+              "description": "Open windows to air out space",
+              "frequency": "DAILY",
+              "sortOrder": 7
+            },
+            {
+              "key": "gym_wash_towels",
+              "description": "Wash gym towels",
+              "frequency": "WEEKLY",
+              "sortOrder": 8
+            }
+          ]
+        },
+        {
+          "category": "Equipment",
+          "items": [
+            {
+              "key": "gym_wipe_equipment",
+              "description": "Wipe down all gym equipment with disinfectant",
+              "frequency": "DAILY",
+              "sortOrder": 1
+            },
+            {
+              "key": "gym_clean_mats",
+              "description": "Clean exercise mats",
+              "frequency": "WEEKLY",
+              "sortOrder": 2
+            },
+            {
+              "key": "gym_disinfect_handles",
+              "description": "Disinfect handles, bars, and grips",
+              "frequency": "DAILY",
+              "sortOrder": 3
+            },
+            {
+              "key": "gym_inspect_equipment",
+              "description": "Inspect equipment for wear/damage",
+              "frequency": "MONTHLY",
+              "sortOrder": 4
+            }
+          ]
+        },
+        {
+          "category": "Floor",
+          "items": [
+            {
+              "key": "gym_sweep_floor",
+              "description": "Sweep/vacuum gym floor",
+              "frequency": "WEEKLY",
+              "sortOrder": 5
+            },
+            {
+              "key": "gym_mop_floor",
+              "description": "Mop rubber flooring",
+              "frequency": "WEEKLY",
+              "sortOrder": 6
+            }
+          ]
+        },
+        {
+          "category": "Seasonal Deep Clean",
+          "items": [
+            {
+              "key": "gym_deep_clean_mats",
+              "description": "Deep clean foam/rubber mats",
+              "frequency": "SEASONAL",
+              "sortOrder": 9
+            },
+            {
+              "key": "gym_clean_fans",
+              "description": "Clean fans and air circulation units",
+              "frequency": "SEASONAL",
+              "sortOrder": 10
+            },
+            {
+              "key": "gym_clean_windows",
+              "description": "Clean windows and sills",
+              "frequency": "SEASONAL",
+              "sortOrder": 11
+            },
+            {
+              "key": "gym_oil_equipment",
+              "description": "Oil and maintain gym equipment",
+              "frequency": "SEASONAL",
+              "sortOrder": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hallways",
+      "label": "Hallways",
+      "categories": [
+        {
+          "category": "Closets",
+          "items": [
+            {
+              "key": "hallway_organise_entry",
+              "description": "Organize entry closet/shoe rack",
+              "frequency": "MONTHLY",
+              "sortOrder": 7
+            }
+          ]
+        },
+        {
+          "category": "Floor",
+          "items": [
+            {
+              "key": "hallway_sweep_floor",
+              "description": "Sweep/vacuum hallway floor",
+              "frequency": "DAILY",
+              "sortOrder": 1
+            },
+            {
+              "key": "hallway_mop_floor",
+              "description": "Mop hallway floor",
+              "frequency": "WEEKLY",
+              "sortOrder": 2
+            },
+            {
+              "key": "hallway_clean_rug",
+              "description": "Clean or wash entry rug",
+              "frequency": "MONTHLY",
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "category": "Seasonal Deep Clean",
+          "items": [
+            {
+              "key": "hallway_clean_windows",
+              "description": "Clean hallway windows",
+              "frequency": "SEASONAL",
+              "sortOrder": 8
+            },
+            {
+              "key": "hallway_wash_curtains",
+              "description": "Wash hallway curtains",
+              "frequency": "SEASONAL",
+              "sortOrder": 9
+            }
+          ]
+        },
+        {
+          "category": "Walls & Surfaces",
+          "items": [
+            {
+              "key": "hallway_wipe_switches",
+              "description": "Wipe light switches and door handles",
+              "frequency": "WEEKLY",
+              "sortOrder": 4
+            },
+            {
+              "key": "hallway_wipe_baseboards",
+              "description": "Wipe baseboards",
+              "frequency": "MONTHLY",
+              "sortOrder": 5
+            },
+            {
+              "key": "hallway_dust_wall_art",
+              "description": "Dust picture frames and wall art",
+              "frequency": "MONTHLY",
+              "sortOrder": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "label": "Kitchen",
+      "categories": [
+        {
+          "category": "Appliances",
+          "items": [
+            {
+              "key": "kitchen_clean_microwave_inside",
+              "description": "Clean inside of microwave",
+              "frequency": "WEEKLY",
+              "sortOrder": 6
+            },
+            {
+              "key": "kitchen_clean_fridge_outside",
+              "description": "Wipe refrigerator exterior and handles",
+              "frequency": "WEEKLY",
+              "sortOrder": 7
+            },
+            {
+              "key": "kitchen_clean_fridge_inside",
+              "description": "Clean inside refrigerator, discard expired items",
+              "frequency": "MONTHLY",
+              "sortOrder": 8
+            },
+            {
+              "key": "kitchen_clean_oven",
+              "description": "Deep clean oven inside",
+              "frequency": "MONTHLY",
+              "sortOrder": 9
+            },
+            {
+              "key": "kitchen_descale_coffee",
+              "description": "Descale coffee maker",
+              "frequency": "MONTHLY",
+              "sortOrder": 10
+            }
+          ]
+        },
+        {
+          "category": "Cabinets & Pantry",
+          "items": [
+            {
+              "key": "kitchen_wipe_cabinet_doors",
+              "description": "Wipe cabinet and drawer fronts",
+              "frequency": "WEEKLY",
+              "sortOrder": 14
+            },
+            {
+              "key": "kitchen_organize_pantry",
+              "description": "Organize pantry, check expiry dates",
+              "frequency": "MONTHLY",
+              "sortOrder": 15
+            }
+          ]
+        },
+        {
+          "category": "Counters & Surfaces",
+          "items": [
+            {
+              "key": "kitchen_wipe_counters",
+              "description": "Wipe down all countertops",
+              "frequency": "DAILY",
+              "sortOrder": 1
+            },
+            {
+              "key": "kitchen_clean_stovetop",
+              "description": "Clean stovetop and burners",
+              "frequency": "DAILY",
+              "sortOrder": 2
+            },
+            {
+              "key": "kitchen_clean_sink",
+              "description": "Clean and disinfect kitchen sink",
+              "frequency": "DAILY",
+              "sortOrder": 3
+            },
+            {
+              "key": "kitchen_wipe_appliances",
+              "description": "Wipe exterior of appliances (microwave, toaster, etc.)",
+              "frequency": "WEEKLY",
+              "sortOrder": 4
+            },
+            {
+              "key": "kitchen_clean_backsplash",
+              "description": "Scrub backsplash",
+              "frequency": "WEEKLY",
+              "sortOrder": 5
+            }
+          ]
+        },
+        {
+          "category": "Floors & Drains",
+          "items": [
+            {
+              "key": "kitchen_sweep_floor",
+              "description": "Sweep/vacuum kitchen floor",
+              "frequency": "DAILY",
+              "sortOrder": 11
+            },
+            {
+              "key": "kitchen_mop_floor",
+              "description": "Mop kitchen floor",
+              "frequency": "WEEKLY",
+              "sortOrder": 12
+            },
+            {
+              "key": "kitchen_clean_drain",
+              "description": "Clean sink drain and garbage disposal",
+              "frequency": "WEEKLY",
+              "sortOrder": 13
+            }
+          ]
+        },
+        {
+          "category": "Seasonal Deep Clean",
+          "items": [
+            {
+              "key": "kitchen_clean_under_appliances",
+              "description": "Clean under refrigerator and stove",
+              "frequency": "SEASONAL",
+              "sortOrder": 16
+            },
+            {
+              "key": "kitchen_clean_exhaust_fan",
+              "description": "Clean exhaust fan/range hood filter",
+              "frequency": "SEASONAL",
+              "sortOrder": 17
+            },
+            {
+              "key": "kitchen_replace_sponges",
+              "description": "Replace sponges and cleaning cloths",
+              "frequency": "SEASONAL",
+              "sortOrder": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "laundry_room",
+      "label": "Laundry Room",
+      "categories": [
+        {
+          "category": "Floor & Surfaces",
+          "items": [
+            {
+              "key": "laundry_sweep_floor",
+              "description": "Sweep/vacuum floor",
+              "frequency": "WEEKLY",
+              "sortOrder": 7
+            },
+            {
+              "key": "laundry_mop_floor",
+              "description": "Mop floor",
+              "frequency": "MONTHLY",
+              "sortOrder": 8
+            },
+            {
+              "key": "laundry_wipe_sink",
+              "description": "Clean laundry sink",
+              "frequency": "WEEKLY",
+              "sortOrder": 9
+            }
+          ]
+        },
+        {
+          "category": "Machines",
+          "items": [
+            {
+              "key": "laundry_wipe_washer_exterior",
+              "description": "Wipe washing machine exterior",
+              "frequency": "WEEKLY",
+              "sortOrder": 1
+            },
+            {
+              "key": "laundry_clean_washer_drum",
+              "description": "Run washer self-clean cycle",
+              "frequency": "MONTHLY",
+              "sortOrder": 2
+            },
+            {
+              "key": "laundry_clean_dryer_lint",
+              "description": "Clean dryer lint trap",
+              "frequency": "DAILY",
+              "sortOrder": 3
+            },
+            {
+              "key": "laundry_clean_dryer_drum",
+              "description": "Wipe dryer drum interior",
+              "frequency": "MONTHLY",
+              "sortOrder": 4
+            },
+            {
+              "key": "laundry_clean_dryer_vent",
+              "description": "Clean full dryer vent duct",
+              "frequency": "SEASONAL",
+              "sortOrder": 5
+            },
+            {
+              "key": "laundry_clean_washer_gasket",
+              "description": "Clean washer door gasket/seal",
+              "frequency": "WEEKLY",
+              "sortOrder": 6
+            }
+          ]
+        },
+        {
+          "category": "Seasonal Deep Clean",
+          "items": [
+            {
+              "key": "laundry_clean_cabinets",
+              "description": "Wipe inside storage cabinets",
+              "frequency": "SEASONAL",
+              "sortOrder": 11
+            }
+          ]
+        },
+        {
+          "category": "Supplies",
+          "items": [
+            {
+              "key": "laundry_check_supplies",
+              "description": "Check detergent, softener, and stain remover levels",
+              "frequency": "WEEKLY",
+              "sortOrder": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "library",
+      "label": "Library",
+      "categories": [
+        {
+          "category": "Books & Shelves",
+          "items": [
+            {
+              "key": "library_dust_shelves",
+              "description": "Dust all bookshelves",
+              "frequency": "WEEKLY",
+              "sortOrder": 1
+            },
+            {
+              "key": "library_wipe_book_covers",
+              "description": "Wipe down book covers on exposed shelves",
+              "frequency": "MONTHLY",
+              "sortOrder": 2
+            },
+            {
+              "key": "library_reorganise_books",
+              "description": "Reorganize books, remove unused",
+              "frequency": "SEASONAL",
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "category": "Electronics",
+          "items": [
+            {
+              "key": "library_wipe_screens",
+              "description": "Clean computer/TV screens",
+              "frequency": "WEEKLY",
+              "sortOrder": 6
+            },
+            {
+              "key": "library_dust_electronics",
+              "description": "Dust electronics and cable management area",
+              "frequency": "MONTHLY",
+              "sortOrder": 7
+            }
+          ]
+        },
+        {
+          "category": "Floor",
+          "items": [
+            {
+              "key": "library_vacuum_floor",
+              "description": "Vacuum or sweep floor",
+              "frequency": "WEEKLY",
+              "sortOrder": 8
+            },
+            {
+              "key": "library_clean_rugs",
+              "description": "Vacuum rugs / wash if possible",
+              "frequency": "MONTHLY",
+              "sortOrder": 9
+            }
+          ]
+        },
+        {
+          "category": "Furniture",
+          "items": [
+            {
+              "key": "library_dust_furniture",
+              "description": "Dust desks, chairs, lamps",
+              "frequency": "WEEKLY",
+              "sortOrder": 4
+            },
+            {
+              "key": "library_wipe_desk",
+              "description": "Wipe down desk surface",
+              "frequency": "DAILY",
+              "sortOrder": 5
+            }
+          ]
+        },
+        {
+          "category": "Seasonal Deep Clean",
+          "items": [
+            {
+              "key": "library_wash_curtains",
+              "description": "Wash curtains/blinds",
+              "frequency": "SEASONAL",
+              "sortOrder": 10
+            },
+            {
+              "key": "library_clean_windows",
+              "description": "Clean windows inside and out",
+              "frequency": "SEASONAL",
+              "sortOrder": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "playroom",
+      "label": "Playroom",
+      "categories": [
+        {
+          "category": "Floor",
+          "items": [
+            {
+              "key": "playroom_vacuum_floor",
+              "description": "Vacuum or sweep floor",
+              "frequency": "DAILY",
+              "sortOrder": 5
+            },
+            {
+              "key": "playroom_mop_floor",
+              "description": "Mop hard floor",
+              "frequency": "WEEKLY",
+              "sortOrder": 6
+            },
+            {
+              "key": "playroom_clean_rug",
+              "description": "Vacuum/wash area rug",
+              "frequency": "MONTHLY",
+              "sortOrder": 7
+            }
+          ]
+        },
+        {
+          "category": "Seasonal Deep Clean",
+          "items": [
+            {
+              "key": "playroom_wash_curtains",
+              "description": "Wash curtains/fabric items",
+              "frequency": "SEASONAL",
+              "sortOrder": 9
+            }
+          ]
+        },
+        {
+          "category": "Surfaces",
+          "items": [
+            {
+              "key": "playroom_wipe_surfaces",
+              "description": "Wipe all shelves, tables, door handles",
+              "frequency": "WEEKLY",
+              "sortOrder": 8
+            }
+          ]
+        },
+        {
+          "category": "Toys",
+          "items": [
+            {
+              "key": "playroom_tidy_toys",
+              "description": "Tidy and return toys to bins",
+              "frequency": "DAILY",
+              "sortOrder": 1
+            },
+            {
+              "key": "playroom_disinfect_toys",
+              "description": "Disinfect high-touch plastic toys",
+              "frequency": "WEEKLY",
+              "sortOrder": 2
+            },
+            {
+              "key": "playroom_wash_soft_toys",
+              "description": "Wash soft/stuffed toys",
+              "frequency": "MONTHLY",
+              "sortOrder": 3
+            },
+            {
+              "key": "playroom_cull_toys",
+              "description": "Donate or dispose of broken/outgrown toys",
+              "frequency": "SEASONAL",
+              "sortOrder": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "winterization",
+      "label": "Winterization",
+      "categories": [
+        {
+          "category": "Generator",
+          "items": [
+            {
+              "key": "Test_generator",
+              "description": "Test generator",
+              "frequency": "ANNUAL",
+              "sortOrder": 32
+            }
+          ]
+        },
+        {
+          "category": "Pest control",
+          "items": [
+            {
+              "key": "winterization_set_mouse_traps",
+              "description": "Setting mouse traps",
+              "frequency": "ANNUAL",
+              "sortOrder": 8
+            },
+            {
+              "key": "winterization_set_mouse_holes",
+              "description": "Fragrance holes",
+              "frequency": "ANNUAL",
+              "sortOrder": 9
+            },
+            {
+              "key": "winterization_inspect_for_insects",
+              "description": "Inspect for insects",
+              "frequency": "ANNUAL",
+              "sortOrder": 10
+            }
+          ]
+        },
+        {
+          "category": "RV Winterization",
+          "items": [
+            {
+              "key": "winterization_rv_drain_fresh_water",
+              "description": "Drain fresh water",
+              "frequency": "ANNUAL",
+              "sortOrder": 11
+            },
+            {
+              "key": "winterization_rv_open_all_faucets",
+              "description": "Open all faucets",
+              "frequency": "ANNUAL",
+              "sortOrder": 12
+            },
+            {
+              "key": "winterization_rv_drain_water_heater",
+              "description": "Drain water heater",
+              "frequency": "ANNUAL",
+              "sortOrder": 13
+            },
+            {
+              "key": "winterization_rv_antifreeze_lines",
+              "description": "Antifreeze lines",
+              "frequency": "ANNUAL",
+              "sortOrder": 14
+            },
+            {
+              "key": "winterization_rv_antifreeze_drains_toilet",
+              "description": "1 Cup antifreeze drains and toilet bowl",
+              "frequency": "ANNUAL",
+              "sortOrder": 15
+            },
+            {
+              "key": "winterization_rv_inspect_exterior_seals",
+              "description": "Inspect exterior seams, windows, roof and seals",
+              "frequency": "ANNUAL",
+              "sortOrder": 16
+            },
+            {
+              "key": "winterization_rv_clean_awning",
+              "description": "Clean awning",
+              "frequency": "ANNUAL",
+              "sortOrder": 17
+            },
+            {
+              "key": "winterization_rv_lubricate_slide_out_seals",
+              "description": "Lubricate slide-out seals",
+              "frequency": "ANNUAL",
+              "sortOrder": 18
+            },
+            {
+              "key": "winterization_rv_cover_propane_tanks",
+              "description": "Cover propane tanks and cap lines",
+              "frequency": "ANNUAL",
+              "sortOrder": 19
+            },
+            {
+              "key": "winterization_rv_grease_hitch_coupler",
+              "description": "Grease hitch coupler",
+              "frequency": "ANNUAL",
+              "sortOrder": 20
+            },
+            {
+              "key": "winterization_rv_grease_stabilizer_jacks",
+              "description": "Grease stabilizer jacks",
+              "frequency": "ANNUAL",
+              "sortOrder": 21
+            },
+            {
+              "key": "winterization_rv_clean_fridge_leave_open",
+              "description": "Clean fridge and leave open",
+              "frequency": "ANNUAL",
+              "sortOrder": 22
+            },
+            {
+              "key": "winterization_rv_vacuum_wipe_surfaces",
+              "description": "Vacuum and wipe surfaces",
+              "frequency": "ANNUAL",
+              "sortOrder": 23
+            },
+            {
+              "key": "winterization_rv_close_blinds",
+              "description": "Close blinds",
+              "frequency": "ANNUAL",
+              "sortOrder": 24
+            },
+            {
+              "key": "winterization_rv_close_vents",
+              "description": "Close vents",
+              "frequency": "ANNUAL",
+              "sortOrder": 25
+            },
+            {
+              "key": "winterization_rv_turn_off_main_breaker",
+              "description": "Turn off main breaker and appliances",
+              "frequency": "ANNUAL",
+              "sortOrder": 26
+            },
+            {
+              "key": "winterization_rv_remove_batteries",
+              "description": "Remove batteries",
+              "frequency": "ANNUAL",
+              "sortOrder": 27
+            },
+            {
+              "key": "winterization_rv_check_detectors",
+              "description": "Check smoke, CO, propane detectors",
+              "frequency": "ANNUAL",
+              "sortOrder": 28
+            },
+            {
+              "key": "winterization_rv_inflate_tires",
+              "description": "Inflate tires",
+              "frequency": "ANNUAL",
+              "sortOrder": 29
+            },
+            {
+              "key": "winterization_rv_chock_wheels",
+              "description": "Chock wheels",
+              "frequency": "ANNUAL",
+              "sortOrder": 30
+            },
+            {
+              "key": "winterization_rv_cover_rv",
+              "description": "Cover RV",
+              "frequency": "ANNUAL",
+              "sortOrder": 31
+            }
+          ]
+        },
+        {
+          "category": "Roof",
+          "items": [
+            {
+              "key": "winterization_inspect_skylights",
+              "description": "Inspect skylights",
+              "frequency": "ANNUAL",
+              "sortOrder": 4
+            },
+            {
+              "key": "winterization_tar_holes",
+              "description": "Tar holes",
+              "frequency": "ANNUAL",
+              "sortOrder": 5
+            },
+            {
+              "key": "winterization_remove_pine_needles",
+              "description": "Remove pine needles",
+              "frequency": "ANNUAL",
+              "sortOrder": 6
+            },
+            {
+              "key": "winterization_cut_back_branches",
+              "description": "Cut back branches",
+              "frequency": "ANNUAL",
+              "sortOrder": 7
+            }
+          ]
+        },
+        {
+          "category": "Water lines",
+          "items": [
+            {
+              "key": "winterization_drain_sprinklers",
+              "description": "Drain sprinklers",
+              "frequency": "ANNUAL",
+              "sortOrder": 1
+            },
+            {
+              "key": "winterization_blow_sprinkler_line",
+              "description": "Blow sprinkler line",
+              "frequency": "ANNUAL",
+              "sortOrder": 2
+            },
+            {
+              "key": "winterization_cover_spigots",
+              "description": "Cover spigots",
+              "frequency": "ANNUAL",
+              "sortOrder": 3
             }
           ]
         }
