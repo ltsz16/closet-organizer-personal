@@ -134,7 +134,7 @@ export async function getFirstaidData() {
 
 export async function getBasicKit() {
   const data = await getFirstaidData()
-  return data.basicKit || {}
+  return { data: data.basicKit?.items || [] }
 }
 
 export async function getBasicKitItems(category = null) {
@@ -148,12 +148,15 @@ export async function getBasicKitItems(category = null) {
 
 export async function getAdvancedBins() {
   const data = await getFirstaidData()
-  return data.advancedKit?.bins || []
+  const bins = [...new Set((data.advancedKit?.items || []).map(item => item.bin).filter(Boolean))]
+  return { data: bins }
 }
 
-export async function getAdvancedKit() {
+export async function getAdvancedKit(binLabel = null) {
   const data = await getFirstaidData()
-  return data.advancedKit || {}
+  const items = data.advancedKit?.items || []
+  const filtered = binLabel ? items.filter((item) => item.bin === binLabel) : items
+  return { data: filtered }
 }
 
 export async function getAdvancedKitItems(binLabel = null) {
