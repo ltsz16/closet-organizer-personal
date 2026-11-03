@@ -77,8 +77,9 @@ export async function getCloset(closetId) {
 }
 
 export async function getShelves(closetId) {
-  const closet = await getCloset(closetId)
-  return closet ? closet.shelves || [] : []
+  const res = await getCloset(closetId)
+  const closet = res.data
+  return { data: closet ? closet.shelves || [] : [] }
 }
 
 export async function getBaskets(shelfId) {
@@ -86,9 +87,9 @@ export async function getBaskets(shelfId) {
   const closets = await getClosets()
   for (const closet of closets) {
     const shelf = closet.shelves?.find((s) => s.id === shelfId)
-    if (shelf) return shelf.baskets || []
+    if (shelf) return { data: shelf.baskets || [] }
   }
-  return []
+  return { data: [] }
 }
 
 /**
