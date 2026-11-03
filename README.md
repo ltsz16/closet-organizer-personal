@@ -103,7 +103,40 @@ In your GitHub repository:
    - `VITE_INVENTORY_SHEET_ID` (from Google Sheets URL)
    - `VITE_REMINDERS_SHEET_ID` (from Google Sheets URL)
 
-### Step 5: Deploy
+### Step 5: Enable GitHub Pages & Actions
+
+#### Configure GitHub Pages for Actions Deployment
+
+This repository uses **GitHub Actions** (not "Deploy from Branch") to build and deploy your Vue.js frontend. Here's how to set it up:
+
+1. Go to your repository on GitHub.com
+2. Click **Settings** → **Pages** (in the left sidebar)
+3. Under **"Source"**, select **GitHub Actions** from the dropdown
+4. That's it! The workflow is already configured in `.github/workflows/deploy-frontend.yml`
+
+**Why GitHub Actions?**
+- ✅ Builds your Vue.js app (npm install + npm run build)
+- ✅ Injects Google Sheets secrets at build time
+- ✅ Optimizes assets for production
+- ✅ Automatically deploys every time you push to `main`
+
+**Verify the deployment:**
+- Go to **Actions** tab on GitHub
+- You should see a workflow run named "Deploy Frontend to GitHub Pages"
+- When it shows a green checkmark ✅, your site is live
+
+#### Configure Your Custom Domain (Optional)
+
+If you want a custom domain like `closet.lthome.us`:
+
+1. Go to **Settings** → **Pages**
+2. Under **Custom domain**, enter your domain name
+3. Update your domain registrar's DNS settings to point to GitHub Pages
+4. The `CNAME` file in this repo will be auto-generated
+
+Your site will then be available at your custom domain.
+
+### Step 6: Deploy
 
 ```bash
 git add .
@@ -111,11 +144,11 @@ git commit -m "Add Google Sheets credentials"
 git push origin main
 ```
 
-GitHub Actions automatically deploys! Your site will be live at:
+GitHub Actions automatically builds and deploys! 
 
-```
-https://YOUR_USERNAME.github.io/closet-organizer/
-```
+**Your site will be live at:**
+- **Without custom domain**: `https://YOUR_USERNAME.github.io/closet-organizer/`
+- **With custom domain**: `https://your-custom-domain.com/`
 
 (Replace `YOUR_USERNAME` with your GitHub username)
 
