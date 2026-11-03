@@ -34,12 +34,18 @@ A completely **free** home organization web app hosted on **GitHub Pages**. Trac
 | Google Sheets | FREE |
 | Domain (optional) | ~$10/yr |
 
+## 📚 Documentation
+
+- **[CLOSET_SETUP.md](./CLOSET_SETUP.md)** — Step-by-step guide to add/edit closets, shelves, and baskets
+- **[GOOGLE_SHEETS_SETUP.md](./GOOGLE_SHEETS_SETUP.md)** — Configure Google Sheets for inventory & reminders
+
 ## Project Structure
 
 ```
 closet-organizer/
 ├── README.md                    # This file
 ├── GOOGLE_SHEETS_SETUP.md       # How to set up Google Sheets
+├── CLOSET_SETUP.md              # How to add/edit closets, shelves, baskets
 ├── data/
 │   └── json/                    # Static data files
 │       ├── closets.json         # Closet structure
