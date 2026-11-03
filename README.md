@@ -112,7 +112,10 @@ This repository uses **GitHub Actions** (not "Deploy from Branch") to build and 
 1. Go to your repository on GitHub.com
 2. Click **Settings** → **Pages** (in the left sidebar)
 3. Under **"Source"**, select **GitHub Actions** from the dropdown
-4. That's it! The workflow is already configured in `.github/workflows/deploy-frontend.yml`
+4. **You may see options like "GitHub Pages Jekyll" or "Static HTML"** — **ignore these!**
+   - Your custom workflow at `.github/workflows/deploy-frontend.yml` is already configured
+   - GitHub will automatically use your custom workflow (you don't need to select a template)
+5. That's it! Your custom workflow is now active
 
 **Why GitHub Actions?**
 - ✅ Builds your Vue.js app (npm install + npm run build)
