@@ -72,7 +72,8 @@ export async function getClosets() {
 
 export async function getCloset(closetId) {
   const closets = await getClosets()
-  return closets.find((c) => c.id === closetId)
+  const closet = closets.find((c) => c.id === closetId)
+  return { data: closet || {} }
 }
 
 export async function getShelves(closetId) {

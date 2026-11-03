@@ -9,32 +9,32 @@
         {
           "id": "shelf_1",
           "label": "Top Shelf",
-          "positionOrder": 0,
+          "position_order": 0,
           "baskets": [
             {
               "id": "basket_1",
               "label": "Towels - Bath",
               "type": "BEDDING",
-              "positionOrder": 0
+              "position_order": 0
             },
             {
               "id": "basket_2",
               "label": "Towels - Hand",
               "type": "BEDDING",
-              "positionOrder": 1
+              "position_order": 1
             }
           ]
         },
         {
           "id": "shelf_2",
           "label": "Middle Shelf",
-          "positionOrder": 1,
+          "position_order": 1,
           "baskets": [
             {
               "id": "basket_3",
               "label": "Bed Sheets - Queen",
               "type": "BEDDING",
-              "positionOrder": 0
+              "position_order": 0
             }
           ]
         }
@@ -48,13 +48,13 @@
         {
           "id": "shelf_3",
           "label": "Main Shelf",
-          "positionOrder": 0,
+          "position_order": 0,
           "baskets": [
             {
               "id": "basket_4",
               "label": "First Aid Basic Kit",
               "type": "FIRST_AID_BASIC",
-              "positionOrder": 0
+              "position_order": 0
             }
           ]
         }
@@ -68,13 +68,13 @@
         {
           "id": "shelf_4",
           "label": "Main Shelf",
-          "positionOrder": 0,
+          "position_order": 0,
           "baskets": [
             {
               "id": "basket_5",
               "label": "First Aid Advanced Kit",
               "type": "FIRST_AID_ADVANCED",
-              "positionOrder": 0
+              "position_order": 0
             }
           ]
         }
@@ -88,13 +88,13 @@
         {
           "id": "shelf_5",
           "label": "Main Shelf",
-          "positionOrder": 0,
+          "position_order": 0,
           "baskets": [
             {
               "id": "basket_6",
               "label": "Cleaning Supplies",
               "type": "CLEANING",
-              "positionOrder": 0
+              "position_order": 0
             }
           ]
         }
@@ -102,3 +102,4 @@
     }
   ]
 }
+
