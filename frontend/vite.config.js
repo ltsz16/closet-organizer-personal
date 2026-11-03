@@ -10,8 +10,8 @@ export default defineConfig({
     },
   },
   // GitHub Pages base path
-  // Change 'closet-organizer' to your repository name if different
-  base: '/closet-organizer/',
+  // Using custom domain (CNAME), so base is root
+  base: '/',
   build: {
     outDir: 'dist',
     sourcemap: false,
