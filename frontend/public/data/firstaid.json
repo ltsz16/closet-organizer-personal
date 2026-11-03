@@ -878,5 +878,111 @@
         "unit": "tablet"
       }
     ]
+  },
+  "cpr": {
+    "data": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Check Responsiveness",
+          "detail": "Tap the person's shoulder and shout, 'Are you okay?' Check if they are conscious and breathing. If unresponsive or not breathing normally, proceed with CPR."
+        },
+        {
+          "step": 2,
+          "title": "Call 911",
+          "detail": "Call emergency services immediately or ask someone nearby to call. If alone with a mobile device, put the phone on speaker so you can talk while performing CPR."
+        },
+        {
+          "step": 3,
+          "title": "Position the Person",
+          "detail": "Place the person flat on their back on a firm, hard surface (floor, ground). Tilt the head back slightly to open the airway. If possible, expose the chest."
+        },
+        {
+          "step": 4,
+          "title": "Hand Position",
+          "detail": "Place the heel of one hand on the center of the chest between the nipples. Place your other hand on top, interlacing fingers. Keep your arms straight and position your shoulders directly above your hands."
+        },
+        {
+          "step": 5,
+          "title": "Chest Compressions",
+          "detail": "Push hard and fast on the chest at a rate of 100-120 compressions per minute (push to the beat of 'Stayin' Alive'). Compress at least 2 inches deep. Allow complete recoil between compressions."
+        },
+        {
+          "step": 6,
+          "title": "Open the Airway",
+          "detail": "Tilt the head back and lift the chin to open the airway. Remove any visible obstructions from the mouth (dentures, food, debris)."
+        },
+        {
+          "step": 7,
+          "title": "Give Rescue Breaths (If Trained)",
+          "detail": "Pinch the nose shut, seal your mouth over theirs, and give 2 rescue breaths. Each breath should last about 1 second and make the chest rise. If untrained, hands-only CPR (compressions only) is also effective."
+        },
+        {
+          "step": 8,
+          "title": "Continue CPR",
+          "detail": "Continue cycles of 30 chest compressions followed by 2 rescue breaths (or 100-120 compressions per minute if hands-only). Do NOT stop until: emergency responders arrive, the person starts breathing, you are too exhausted to continue, or an AED is available."
+        },
+        {
+          "step": 9,
+          "title": "Use an AED If Available",
+          "detail": "If an Automated External Defibrillator (AED) is available, turn it on and follow the voice prompts. Apply the pads to bare, dry chest. Let the AED analyze the rhythm and deliver a shock if advised. Resume CPR immediately after shock."
+        },
+        {
+          "step": 10,
+          "title": "Recovery Position (If Breathing)",
+          "detail": "Once the person begins breathing and is unresponsive, place them in the recovery position: turn on their side, tilt the head back slightly, and ensure the airway stays open. Stay with them until emergency responders arrive."
+        }
+      ]
+    }
+  },
+  "poison": {
+    "description": "Poison Control Reference - Call 1-800-222-1222",
+    "data": {
+      "primary_number": "1-800-222-1222",
+      "description": "U.S. Poison Control Center — available 24/7",
+      "emergency_numbers": [
+        {
+          "service": "Emergency / Fire / Police",
+          "number": "911"
+        },
+        {
+          "service": "Non-Emergency Police",
+          "number": "311"
+        },
+        {
+          "service": "Suicide & Crisis Lifeline",
+          "number": "988"
+        }
+      ],
+      "immediate_actions": [
+        "Call Poison Control or 911 immediately",
+        "If unconscious or not breathing, call 911 first",
+        "Begin CPR if trained and person is not breathing",
+        "Do not induce vomiting unless instructed by Poison Control"
+      ],
+      "information_to_have_ready": [
+        "Person's age and weight",
+        "Name of the product or substance (have the container if possible)",
+        "Time of exposure and amount involved",
+        "How it was taken: swallowed, inhaled, skin exposure, or eye exposure",
+        "Person's current symptoms"
+      ]
+    }
+  },
+  "family_medical": {
+    "description": "Family Medical Information - Store in Google Sheets",
+    "data": {
+      "note": "Family medical information is stored in Google Sheets for collaborative access and real-time updates. Add family members using the 'Add Member' button in the app.",
+      "fields": [
+        "Name",
+        "Date of Birth",
+        "Blood Type",
+        "Allergies",
+        "Current Medications",
+        "Medical Conditions",
+        "Emergency Contact",
+        "Notes"
+      ]
+    }
   }
 }
